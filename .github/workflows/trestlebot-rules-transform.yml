@@ -11,6 +11,7 @@ on:
       - 'component-definitions/**'
       - 'markdown/**'
       - 'rules/**'
+      - '.github/workflows/**'
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
@@ -21,7 +22,7 @@ jobs:
     name: Rules Transform and AutoSync
     runs-on: ubuntu-latest
     permissions:
-      content: write
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
