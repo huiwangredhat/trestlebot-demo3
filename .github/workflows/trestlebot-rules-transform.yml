@@ -21,7 +21,7 @@ jobs:
     name: Rules Transform and AutoSync
     runs-on: ubuntu-latest
     permissions:
-      content: read
+      content: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
